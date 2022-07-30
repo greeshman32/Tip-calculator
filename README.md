@@ -69,13 +69,13 @@ Their are some probles with the website like the card looks weard when the width
 
 ### Useful resources
 
--youtube
--MDN
+ - Youtube
+ - MDN
 
 
 ## Author
 
-- Frontend Mentor - [@Greeshman](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Greeshman](https://www.frontendmentor.io/profile/greeshman32)
 
 
 

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Tip calculator app</title>
+  
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+
+  <h3>splitter</h3>
+  <main>
+    <div class="input">
+      <div class="amount">
+        Bill<br>
+
+        <input class="doller" type="text">
+      </div>
+      
+      <div class="percentage">
+        Select Tip %
+        <ul id="percentage">
+        <li value="5">5%</li>
+        <li value="10">10%</li>
+        <li value="15">15%</li>
+        <li value="25">25%</li>
+        <li value="50">50%</li>
+        <li><input type="text" placeholder="Custom" class="normal"></li>
+      </ul>
+        
+      </div>
+      <div class="people">
+        Number of People <div class="error">cannot be zero</div>
+        <input type="text" class="profile">
+      </div>
+      
+    </div>
+    <div class="total">
+      
+      <div class="title">Tip Amount</div> 
+      <div class="sub">/ person</div> 
+
+     <div class="title">Total</div> 
+      <div class="sub">/ person</div> 
+
+      <span class="tip-amount">$0.00</span>
+      <span class="total-tip">$0.00</span>
+      <div class="reset">Reset</div> 
+    </div>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>

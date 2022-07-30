@@ -1,0 +1,207 @@
+:root{
+    --highlights:hsl(172, 67%, 45%);
+    --blocks:hsl(183, 100%, 15%);
+    --text: hsl(186, 14%, 43%);
+    --grayish_cyan: hsl(184, 14%, 56%);
+    --background: hsl(185, 41%, 84%);
+    --input-box: hsl(189, 41%, 97%);
+}
+
+body{
+    font-family: 'Space Mono', monospace;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    background-color:  var(--background);
+    color: var(--text);
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+h3{
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    text-align: center;
+    word-wrap: break-word;
+    width:9rem;
+    left: 50%;
+    transform:translateX(-50%);
+    margin: 2.5rem 0;
+    color: var(--blocks);
+}
+
+main{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.input{
+    background-color: white;
+    font-size: 1rem;
+}
+.total{
+    background-color: var(--blocks);
+    font-size: 1rem;
+    border-radius: 1rem;
+}
+ul{
+    list-style: none;
+    padding: 0; 
+    display: grid;
+}
+ li{
+    font-size: 1.6rem;
+    background-color: var(--blocks);
+    margin: .5rem;
+    text-align: center;
+    color: var(--input-box);
+    padding: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: hover .1s;
+}
+
+li:last-child{
+    background-color: white;
+    padding: 0;
+}
+input{
+    font-family: 'Space Mono', monospace;
+    position: relative;
+    width: calc(100% - 30px);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--blocks);
+    text-align: right;
+    border: none;
+    background-color: var(--input-box);
+    padding: 10px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input:focus{
+    border: 4px solid var(--highlights);
+}
+.title{
+    color: var(--input-box);
+}
+.sub{
+    font-size: .9rem;
+}
+
+
+
+@media only screen and (min-width: 801px){
+    main{
+        width: 70vw;
+        margin-left:50%;
+        transform: translateX(-50%);
+        padding:1rem ;
+        border-radius: 1rem;
+    }
+    .input{
+        width: 50%;
+        margin-right: 2rem;
+    }
+    .total{
+        width: 50%;
+    }
+    ul{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .total>.title{
+        margin-top:3rem;
+        margin-left: 2rem;
+    }
+    .total>.sub{
+        margin-left:2rem ;
+    }
+    .total>.reset{
+       
+        margin: 0 2rem ;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 3.5rem;
+        background-color: var(--highlights);
+        color: var(--blocks);
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 5px 0;
+    }
+    .tip-amount{
+        position: absolute;
+        right: 10%;
+        color:var(--highlights) ;
+        top: 5rem;
+        font-size: 2rem;
+    }
+    .total-tip{
+        position: absolute;
+        right: 10%;
+        color: var(--highlights);
+        top: 11.5rem;
+        font-size: 2rem;
+    }
+}
+
+
+
+@media only screen and (max-width: 800px){
+    main{
+        padding: 1rem 0;
+        width: 100vw;
+        flex-wrap: wrap;
+        border-top-left-radius:1rem;
+        border-top-right-radius: 1rem;
+    }
+    .input{
+        width: 90%;
+        margin: .5em;
+        
+    }
+    .total{
+        width: 90%;
+        margin: .5em;
+        padding: 1rem;
+        padding-top: 2rem;
+    }
+   ul{
+        grid-template-columns: 1fr 1fr;
+    }
+    .total{
+        position: relative;
+    }
+    .tip-amount{
+        position: absolute;
+        right:  2rem;
+        color: var(--highlights);
+        top: 2rem;
+        font-size: 2rem;
+    }
+    .total-tip{
+        position: absolute;
+        right:  2rem;
+        color: var(--highlights);
+        top: 6rem;
+        font-size: 2rem;
+    }
+    .reset{
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 1rem;
+        background-color: var(--highlights);
+        color: var(--blocks);
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 5px 0;
+    }
+}
+.error{
+    font-weight: 400;
+    color: red;
+    display: none;
+}

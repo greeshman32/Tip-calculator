@@ -40,13 +40,6 @@ Users should be able to:
 
 - Live Site URL: [Link](https://greeshman32.github.io/Tip-calculator/)
 
-## My process
-
-  - Divied the page into divs
-  - Add the divs to html file
-  - Apply styles
-  - Use DOM to get the amount javascript 
-  - Use DOM to calculate and display the amount
 
 ### Built with
 

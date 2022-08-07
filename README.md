@@ -16,7 +16,6 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -34,7 +33,6 @@ Users should be able to:
 ![](./images/mobile_screenshot.png)
 
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
@@ -51,7 +49,7 @@ Users should be able to:
 - var()
 - eventhandler
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+
 
 
 ### Continued development

@@ -46,7 +46,7 @@ function clear(){
     custom[0].value='';
     percentage=undefined;
     people[0].value='';
-    pep=0;
+    pep=undefined;
 }
 
 function getpeople(event){

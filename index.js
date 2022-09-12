@@ -1,7 +1,7 @@
 let selected;
-let val;
-let percentage;
-let pep;
+let val; //amount entered
+let percentage; // percentage selected
+let pep; // people served 
 const reset=document.getElementsByClassName("reset");
 const bill=document.getElementsByClassName("doller");
 const people=document.getElementsByClassName("profile");
@@ -46,6 +46,7 @@ function clear(){
     custom[0].value='';
     percentage=undefined;
     people[0].value='';
+    pep=0;
 }
 
 function getpeople(event){
